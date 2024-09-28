@@ -1,0 +1,24 @@
+.carousel .slide {
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.carousel .slide img {
+  border-radius: 15px; /* Rounded corners for images */
+}
+
+.carousel .control-arrow {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for controls */
+  border-radius: 50%; /* Round controls */
+  height: 30px; /* Size of controls */
+  width: 30px;
+  margin-top: -15px; /* Center vertically */
+}
+
+.carousel .control-arrow:hover {
+  background: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+.carousel .control-arrow:before {
+  font-size: 20px; /* Control arrow size */
+  color: white; /* Control arrow color */
+}
