@@ -1,12 +1,11 @@
 import React from 'react';
 
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // import carousel styles
-import { Box, Typography, IconButton, Button } from '@mui/material'; // Material-UI for styling
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
+import { Box, Typography, IconButton, Button } from '@mui/material'; 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Card, CardMedia, CardContent, Grid, Paper } from '@mui/material';
-// import { Card, CardMedia, CardContent, Typography, Grid, Button, Box } from '@mui/material';
 import { styled } from '@mui/system';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
@@ -17,7 +16,7 @@ const products = [
     title: "Ray-Ban",
     discount: "Up to 20% off",
     description: "Classic sunglasses & eyewear",
-    image: "https://i.pinimg.com/736x/6b/4c/fa/6b4cfab2b51d8d7c57a008f828c9a942.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/736x/6b/4c/fa/6b4cfab2b51d8d7c57a008f828c9a942.jpg",
     price: "$139.99",
   },
   {
@@ -334,10 +333,10 @@ const ShopButton = styled(Button)(({ theme }) => ({
 function Subpage3() {
   return (
     <>
-      <Box sx={{ backgroundColor: '#f8f8ff', p: 10, borderRadius: 2 }}>
+     <Box sx={{ backgroundColor: '#f8f8ff', p: 5, borderRadius: 2 }}>
         <Grid container spacing={3} alignItems="center">
-          {/* Left side: Text content */}
-          <Grid item xs={12} sm={6}>
+      
+          <Grid item xs={12} sm={6} md={6} lg={6}>
             <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
               Lowest Prices <br /> Best Quality Shopping
             </Typography>
@@ -366,11 +365,11 @@ function Subpage3() {
              
               sx={{ backgroundColor: '#FF4D4F', borderRadius: 3 }}
             >
-              Download the Meesho App
+              Download the Fashion hub App
             </Button>
           </Grid>
 
-          {/* Right side: Promo banner */}
+    
           <Grid item xs={12} sm={6}>
             <Box
               sx={{
@@ -419,7 +418,7 @@ function Subpage3() {
       </Grid>
       <Box sx={{ backgroundColor: '#1e1e1e', color: '#fff', p: 3,mt:5, borderRadius: 2 }}>
       <Grid container spacing={3} alignItems="center">
-        {/* Left side: Text content */}
+      
         <Grid item xs={12} md={6}>
           <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
             Register as a fashion hub Supplier
@@ -456,12 +455,12 @@ function Subpage3() {
           </Button>
         </Grid>
 
-        {/* Right side: Image content */}
+      
         <Grid item xs={12} md={6}>
           <Box
             component="img"
             src="https://media.istockphoto.com/id/1216198470/photo/portrait-of-female-owner-of-fashion-store-checking-stock-in-clothing-store-with-digital-tablet.jpg?s=612x612&w=0&k=20&c=gDSD1viD9C6x3ZPh13otDEoKaYZ00YhFfCCOQ2aqYG0="
-            alt="Meesho Supplier"
+            alt=" Supplier"
             sx={{
               width: '100%',
               borderRadius: 2,

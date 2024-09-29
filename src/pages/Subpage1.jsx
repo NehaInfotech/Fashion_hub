@@ -1,12 +1,11 @@
 import React from 'react';
 
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // import carousel styles
-import { Box, Typography, IconButton, Button } from '@mui/material'; // Material-UI for styling
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
+import { Box, Typography, IconButton, Button } from '@mui/material'; 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Card, CardMedia, CardContent, Grid, Paper } from '@mui/material';
-// import { Card, CardMedia, CardContent, Typography, Grid, Button, Box } from '@mui/material';
 import { styled } from '@mui/system';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
@@ -18,7 +17,7 @@ const products = [
     title: "Levi's",
     discount: "Up to 40% off",
     description: "Classic denim essentials",
-    image: "https://i.pinimg.com/236x/a6/ac/17/a6ac17e3ed32cf12782d30739a037148.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/236x/a6/ac/17/a6ac17e3ed32cf12782d30739a037148.jpg",
     price: "$59.99",
   }
   
@@ -27,7 +26,7 @@ const products = [
     title: "Gucci",
     discount: "Up to 15% off",
     description: "Luxury statement pieces",
-    image: "https://i.pinimg.com/736x/e0/fb/20/e0fb209c214dfa0bc04b1cca977633fd.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/736x/e0/fb/20/e0fb209c214dfa0bc04b1cca977633fd.jpg",
     price: "$299.99",
   }
   
@@ -35,7 +34,7 @@ const products = [
     title: "Calvin Klein",
     discount: "Up to 30% off",
     description: "Timeless designs for every occasion",
-    image: "https://i.pinimg.com/736x/7f/a0/e0/7fa0e04333f9dada2aecf5e4c77043cd.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/736x/7f/a0/e0/7fa0e04333f9dada2aecf5e4c77043cd.jpg",
     price: "$99.99",
   }
   
@@ -44,7 +43,7 @@ const products = [
   title: "TOMS",
   discount: "Up to 50% off",
   description: "Casual shoes with a cause",
-  image: "https://i.pinimg.com/736x/28/a2/fb/28a2fbe47df45c0d07b3cc2321f54da9.jpg", // Replace with actual image URL
+  image: "https://i.pinimg.com/736x/28/a2/fb/28a2fbe47df45c0d07b3cc2321f54da9.jpg",
   price: "$39.99",
 },
 {
@@ -336,10 +335,10 @@ const ShopButton = styled(Button)(({ theme }) => ({
 function Subpage1() {
   return (
   <>
-<Box sx={{ backgroundColor: '#f8f8ff', p: 10, borderRadius: 2 }}>
+<Box sx={{ backgroundColor: '#f8f8ff', p: 5, borderRadius: 2 }}>
         <Grid container spacing={3} alignItems="center">
-          {/* Left side: Text content */}
-          <Grid item xs={12} sm={6}>
+          
+          <Grid item xs={12} sm={6} md={6} lg={6}>
             <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
               Lowest Prices <br /> Best Quality Shopping
             </Typography>
@@ -368,11 +367,11 @@ function Subpage1() {
              
               sx={{ backgroundColor: '#FF4D4F', borderRadius: 3 }}
             >
-              Download the Meesho App
+              Download the Fashion hub App
             </Button>
           </Grid>
 
-          {/* Right side: Promo banner */}
+       
           <Grid item xs={12} sm={6}>
             <Box
               sx={{
@@ -420,7 +419,7 @@ function Subpage1() {
       </Grid>
       <Box sx={{ backgroundColor: '#1e1e1e', color: '#fff', p: 3,mt:5, borderRadius: 2 }}>
       <Grid container spacing={3} alignItems="center">
-        {/* Left side: Text content */}
+      
         <Grid item xs={12} md={6}>
           <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
             Register as a fashion hub Supplier
@@ -457,12 +456,12 @@ function Subpage1() {
           </Button>
         </Grid>
 
-        {/* Right side: Image content */}
+      
         <Grid item xs={12} md={6}>
           <Box
             component="img"
             src="https://media.istockphoto.com/id/1216198470/photo/portrait-of-female-owner-of-fashion-store-checking-stock-in-clothing-store-with-digital-tablet.jpg?s=612x612&w=0&k=20&c=gDSD1viD9C6x3ZPh13otDEoKaYZ00YhFfCCOQ2aqYG0="
-            alt="Meesho Supplier"
+            alt=" Supplier"
             sx={{
               width: '100%',
               borderRadius: 2,

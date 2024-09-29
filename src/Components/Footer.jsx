@@ -16,7 +16,6 @@ function Footer() {
       }}
     >
       <Grid container spacing={4}>
-        {/* About Section */}
         <Grid item xs={12} sm={4}>
           <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
             About Us
@@ -26,7 +25,7 @@ function Footer() {
           </Typography>
         </Grid>
 
-        {/* Customer Service Section */}
+      
         <Grid item xs={12} sm={4}>
           <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
             Customer Service
@@ -45,7 +44,7 @@ function Footer() {
           </Link>
         </Grid>
 
-        {/* Social Media Section */}
+       
         <Grid item xs={12} sm={4}>
           <Typography variant="h6" sx={{ fontWeight: 'bold', mb: 2 }}>
             Follow Us
@@ -79,7 +78,7 @@ function Footer() {
         </Grid>
       </Grid>
 
-      {/* Bottom Footer */}
+     
       <Box 
         sx={{ 
           mt: 4, 

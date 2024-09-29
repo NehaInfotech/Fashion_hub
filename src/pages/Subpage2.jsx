@@ -1,12 +1,11 @@
 import React from 'react';
 
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // import carousel styles
-import { Box, Typography, IconButton, Button } from '@mui/material'; // Material-UI for styling
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; 
+import { Box, Typography, IconButton, Button } from '@mui/material'; 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import { Card, CardMedia, CardContent, Grid, Paper } from '@mui/material';
-// import { Card, CardMedia, CardContent, Typography, Grid, Button, Box } from '@mui/material';
+import { Card, CardMedia, CardContent, Grid, Paper,Container } from '@mui/material';
 import { styled } from '@mui/system';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
@@ -17,35 +16,35 @@ const products = [
     title: "Forever New",
     discount: "Up to 50% off",
     description: "Stylish & elegant dresses",
-    image: "https://funkyforty.com/wp-content/uploads/2020/06/DSC_1804-scaled.jpeg", // Replace with actual image URL
+    image: "https://funkyforty.com/wp-content/uploads/2020/06/DSC_1804-scaled.jpeg",
     price: "$79.99",
   },
   {
     title: "Twenty Dresses",
     discount: "Up to 50% off",
     description: "8 till late needs",
-    image: "https://images-static.nykaa.com/media/catalog/product/5/e/5e5bc1cDR011640_1.jpg", // Replace with actual image URL
+    image: "https://images-static.nykaa.com/media/catalog/product/5/e/5e5bc1cDR011640_1.jpg",
     price: "$49.99",
   },
   {
     title: "Biba",
     discount: "Up to 65% off",
     description: "Contemporary ethnics",
-    image: "https://etimg.etb2bimg.com/thumb/msid-112837566,imgsize-73336,width-1200,height=765,overlay-etbrandequity/advertising/kriti-sanon-embraces-tradition-confidently-into-the-future-with-biba.jpg", // Replace with actual image URL
+    image: "https://etimg.etb2bimg.com/thumb/msid-112837566,imgsize-73336,width-1200,height=765,overlay-etbrandequity/advertising/kriti-sanon-embraces-tradition-confidently-into-the-future-with-biba.jpg",
     price: "$89.99",
   },
   {
     title: "Puma",
     discount: "Min 40% off",
     description: "Dynamic athletic styles",
-    image: "https://img01.ztat.net/article/spp-media-p1/6ade89fbbcef42eda7ce65901277f8b2/48a431b4e8eb4597afd4cfe6c8271b94.jpg?imwidth=1800", // Replace with actual image URL
+    image: "https://img01.ztat.net/article/spp-media-p1/6ade89fbbcef42eda7ce65901277f8b2/48a431b4e8eb4597afd4cfe6c8271b94.jpg?imwidth=1800",
     price: "$59.99",
   },
   {
     title: "Cider",
     discount: "Up to 35% off",
     description: "Gen-Z dresses across US",
-    image: "https://i.pinimg.com/736x/78/b7/f0/78b7f006f98a028db9ad521495708de4.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/736x/78/b7/f0/78b7f006f98a028db9ad521495708de4.jpg",
     price: "$39.99",
   },
  
@@ -53,7 +52,7 @@ const products = [
     title: "H&M",
     discount: "Flat 30% off",
     description: "Trendy styles for every season",
-    image: "https://i.pinimg.com/736x/78/1a/56/781a56a1fb934142c53b9d535cd9327c.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/736x/78/1a/56/781a56a1fb934142c53b9d535cd9327c.jpg",
     price: "$34.99",
   }
   ,
@@ -61,42 +60,42 @@ const products = [
     title: "Zara",
     discount: "Up to 50% off",
     description: "Sophisticated modern apparel",
-    image: "https://i.pinimg.com/736x/34/bc/14/34bc1471d1858b38ee0cbb79110d5e40.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/736x/34/bc/14/34bc1471d1858b38ee0cbb79110d5e40.jpg",
     price: "$89.99",
   }
   , {
     title: "Nike",
     discount: "Flat 20% off",
     description: "Performance wear for athletes",
-    image: "https://i.pinimg.com/736x/28/7d/d2/287dd2a99c30999e10fb2cee420372e7.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/736x/28/7d/d2/287dd2a99c30999e10fb2cee420372e7.jpg",
     price: "$69.99",
   }
   , {
     title: "Adidas",
     discount: "Up to 45% off",
     description: "Activewear for all occasions",
-    image: "https://i.pinimg.com/736x/a3/89/5b/a3895b451bdd0e388541ca1a725b5da2.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/736x/a3/89/5b/a3895b451bdd0e388541ca1a725b5da2.jpg",
     price: "$54.99",
   }
   , {
     title: "Forever 21",
     discount: "Up to 55% off",
     description: "Affordable fashion for everyone",
-    image: "https://i.pinimg.com/736x/de/a7/ad/dea7ad0369b7a91f02ff031260d5d665.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/736x/de/a7/ad/dea7ad0369b7a91f02ff031260d5d665.jpg",
     price: "$29.99",
   }
   , {
     title: "Mango",
     discount: "Up to 60% off",
     description: "Chic and casual for every day",
-    image: "https://i.pinimg.com/736x/44/54/f1/4454f15430125cbe05e6bcc67a53708d.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/736x/44/54/f1/4454f15430125cbe05e6bcc67a53708d.jpg",
     price: "$74.99",
   }
   , {
     title: "Urban Outfitters",
     discount: "Up to 25% off",
     description: "Vintage-inspired streetwear",
-    image: "https://i.pinimg.com/736x/25/e3/b9/25e3b9cf4d431444384f112a1d757b0f.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/736x/25/e3/b9/25e3b9cf4d431444384f112a1d757b0f.jpg",
     price: "$49.99",
   }
  
@@ -104,49 +103,49 @@ const products = [
     title: "ASOS",
     discount: "Flat 50% off",
     description: "Bold looks for the new season",
-    image: "https://i.pinimg.com/736x/33/ed/c9/33edc9ca6ab5559859f5def25e5480e6.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/736x/33/ed/c9/33edc9ca6ab5559859f5def25e5480e6.jpg",
     price: "$39.99",
   }
   , {
     title: "Shein",
     discount: "Up to 70% off",
     description: "Affordable trends for everyone",
-    image: "https://i.pinimg.com/736x/ff/de/25/ffde2564d0c57401e045acbfa1f2ec8c.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/736x/ff/de/25/ffde2564d0c57401e045acbfa1f2ec8c.jpg",
     price: "$19.99",
   }
   , {
     title: "Aldo",
     discount: "Up to 30% off",
     description: "Sleek and modern footwear",
-    image: "https://i.pinimg.com/736x/c8/bb/ec/c8bbec9d56408c72d25528690c7ec229.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/736x/c8/bb/ec/c8bbec9d56408c72d25528690c7ec229.jpg",
     price: "$89.99",
   }
   , {
     title: "Birkenstock",
     discount: "Up to 20% off",
     description: "Comfortable and stylish sandals",
-    image: "https://i.pinimg.com/736x/b8/b7/14/b8b7143d9ea247810ba68a8e228c6326.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/736x/b8/b7/14/b8b7143d9ea247810ba68a8e228c6326.jpg",
     price: "$49.99",
   }
   , {
     title: "The North Face",
     discount: "Flat 35% off",
     description: "Outdoor gear for adventure",
-    image: "https://i.pinimg.com/736x/5f/3c/fc/5f3cfc7764205f4b601a5d5deac7015e.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/736x/5f/3c/fc/5f3cfc7764205f4b601a5d5deac7015e.jpg",
     price: "$129.99",
   }
   , {
     title: "Vans",
     discount: "Flat 25% off",
     description: "Iconic skater shoes & apparel",
-    image: "https://i.pinimg.com/736x/75/a1/9f/75a19f8134cb96d37704f0fd27e7286e.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/736x/75/a1/9f/75a19f8134cb96d37704f0fd27e7286e.jpg",
     price: "$44.99",
   }
   , {
     title: "Under Armour",
     discount: "Up to 40% off",
     description: "High-performance activewear",
-    image: "https://i.pinimg.com/736x/01/a9/f2/01a9f29c0c284f9081708b5382d23f4d.jpg", // Replace with actual image URL
+    image: "https://i.pinimg.com/736x/01/a9/f2/01a9f29c0c284f9081708b5382d23f4d.jpg",
     price: "$59.99",
   },
   {
@@ -310,142 +309,147 @@ const ShopButton = styled(Button)(({ theme }) => ({
 function Subpage2() {
   return (
     <>
-    <Box sx={{ backgroundColor: '#f8f8ff', p: 10, borderRadius: 2 }}>
-        <Grid container spacing={3} alignItems="center">
-          {/* Left side: Text content */}
-          <Grid item xs={12} sm={6}>
-            <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
-              Lowest Prices <br /> Best Quality Shopping
-            </Typography>
-            <Grid container spacing={2} sx={{ mb: 2 }}>
-              <Grid item>
-                <Box display="flex" alignItems="center">
-                  <LocalShippingIcon sx={{ color: '#9c27b0', mr: 1 }} />
-                  <Typography>Free Delivery</Typography>
-                </Box>
+       <Container>
+        <Box sx={{ backgroundColor: '#f8f8ff', p: 5, borderRadius: 2 }}>
+          <Grid container spacing={3} alignItems="center">
+            
+            <Grid item xs={12} sm={6} md={6} lg={6}>
+              <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
+                Lowest Prices <br /> Best Quality Shopping
+              </Typography>
+              <Grid container spacing={2} sx={{ mb: 2 }}>
+                <Grid item>
+                  <Box display="flex" alignItems="center">
+                    <LocalShippingIcon sx={{ color: '#9c27b0', mr: 1 }} />
+                    <Typography>Free Delivery</Typography>
+                  </Box>
+                </Grid>
+                <Grid item>
+                  <Box display="flex" alignItems="center">
+                    <AttachMoneyIcon sx={{ color: '#9c27b0', mr: 1 }} />
+                    <Typography>Cash on Delivery</Typography>
+                  </Box>
+                </Grid>
+                <Grid item>
+                  <Box display="flex" alignItems="center">
+                    <SwapHorizontalCircleIcon sx={{ color: '#9c27b0', mr: 1 }} />
+                    <Typography>Easy Returns</Typography>
+                  </Box>
+                </Grid>
               </Grid>
-              <Grid item>
-                <Box display="flex" alignItems="center">
-                  <AttachMoneyIcon sx={{ color: '#9c27b0', mr: 1 }} />
-                  <Typography>Cash on Delivery</Typography>
-                </Box>
-              </Grid>
-              <Grid item>
-                <Box display="flex" alignItems="center">
-                  <SwapHorizontalCircleIcon sx={{ color: '#9c27b0', mr: 1 }} />
-                  <Typography>Easy Returns</Typography>
-                </Box>
-              </Grid>
-            </Grid>
-            <Button
-              variant="contained"
-             
-              sx={{ backgroundColor: '#FF4D4F', borderRadius: 3 }}
-            >
-              Download the Meesho App
-            </Button>
-          </Grid>
+              <Button
+                variant="contained"
 
-          {/* Right side: Promo banner */}
-          <Grid item xs={12} sm={6}>
-            <Box
-              sx={{
-                backgroundColor: '#ffcc80',
-                borderRadius: 2,
-                textAlign: 'center',
-                py: 4,
-                px: 2,
-                position: 'relative',
-              }}
-            >
-              <Typography
-                variant="h5"
-                sx={{ fontWeight: 'bold', color: '#7e57c2', mb: 2 }}
+                sx={{ backgroundColor: '#FF4D4F', borderRadius: 3 }}
               >
-                Mega Blockbuster Sale
+                Download the Fashion hub App
+              </Button>
+            </Grid>
+
+           
+            <Grid item xs={12} sm={6}>
+              <Box
+                sx={{
+                  backgroundColor: '#ffcc80',
+                  borderRadius: 2,
+                  textAlign: 'center',
+                  py: 4,
+                  px: 2,
+                  position: 'relative',
+                }}
+              >
+                <Typography
+                  variant="h5"
+                  sx={{ fontWeight: 'bold', color: '#7e57c2', mb: 2 }}
+                >
+                  Mega Blockbuster Sale
+                </Typography>
+                <Typography variant="body1" sx={{ color: '#f44336', mb: 2 }}>
+                  UP TO 80% OFF
+                </Typography>
+                <Typography variant="body2">Saal ke sabse kam daam</Typography>
+              </Box>
+            </Grid>
+          </Grid>
+        </Box>
+      </Container>
+      <Container>
+        <Typography variant="h4" gutterBottom align="center" sx={{ paddingTop: '20px' }}>
+          Covetable finds this Week
+        </Typography>
+        <Grid container spacing={9} sx={{ padding: '20px' }}>
+          {products.map((product, index) => (
+            <Grid sx={{}}
+              item
+              xs={12}
+
+              sm={6}
+
+              md={4}
+
+              lg={3}
+              key={index}
+            >
+              <ProductCard product={product} />
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+      <Container>
+        <Box sx={{ backgroundColor: '#1e1e1e', color: '#fff', p: 3, mt: 5, borderRadius: 2 }}>
+          <Grid container spacing={3} alignItems="center">
+            
+            <Grid item xs={12} md={6}>
+              <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
+                Register as a fashion hub Supplier
               </Typography>
-              <Typography variant="body1" sx={{ color: '#f44336', mb: 2 }}>
-                UP TO 80% OFF
+              <Typography variant="subtitle1" sx={{ mb: 2 }}>
+                Sell your products to crores of customers at 0% commission
               </Typography>
-              <Typography variant="body2">Saal ke sabse kam daam</Typography>
-            </Box>
-          </Grid>
-        </Grid>
-      </Box>
-      <Typography variant="h4" gutterBottom align="center" sx={{ paddingTop: '20px' }}>
-        Covetable finds this Week
-      </Typography>
-      <Grid container spacing={9} sx={{ padding: '20px' }}>
-        {products.map((product, index) => (
-          <Grid sx={{}}
-            item
-            xs={12}
-
-            sm={6}
-
-            md={4}
-
-            lg={3}
-            key={index}
-          >
-            <ProductCard product={product} />
-          </Grid>
-        ))}
-      </Grid>
-      <Box sx={{ backgroundColor: '#1e1e1e', color: '#fff', p: 3,mt:5, borderRadius: 2 }}>
-      <Grid container spacing={3} alignItems="center">
-        {/* Left side: Text content */}
-        <Grid item xs={12} md={6}>
-          <Typography variant="h4" sx={{ fontWeight: 'bold', mb: 2 }}>
-            Register as a fashion hub Supplier
-          </Typography>
-          <Typography variant="subtitle1" sx={{ mb: 2 }}>
-            Sell your products to crores of customers at 0% commission
-          </Typography>
-          <Grid container spacing={2}>
-            <Grid item>
-              <Box display="flex" alignItems="center">
-                <CheckCircleIcon sx={{ color: '#00e676', mr: 1 }} />
-                <Typography>Grow your business 10x</Typography>
-              </Box>
+              <Grid container spacing={2}>
+                <Grid item>
+                  <Box display="flex" alignItems="center">
+                    <CheckCircleIcon sx={{ color: '#00e676', mr: 1 }} />
+                    <Typography>Grow your business 10x</Typography>
+                  </Box>
+                </Grid>
+                <Grid item>
+                  <Box display="flex" alignItems="center">
+                    <CheckCircleIcon sx={{ color: '#00e676', mr: 1 }} />
+                    <Typography>Enjoy 100% Profit</Typography>
+                  </Box>
+                </Grid>
+                <Grid item>
+                  <Box display="flex" alignItems="center">
+                    <CheckCircleIcon sx={{ color: '#00e676', mr: 1 }} />
+                    <Typography>Sell all over India</Typography>
+                  </Box>
+                </Grid>
+              </Grid>
+              <Button
+                variant="contained"
+                color="secondary"
+                sx={{ backgroundColor: '#ff4d4f', borderRadius: 3, mt: 2 }}
+              >
+                Sign up now
+              </Button>
             </Grid>
-            <Grid item>
-              <Box display="flex" alignItems="center">
-                <CheckCircleIcon sx={{ color: '#00e676', mr: 1 }} />
-                <Typography>Enjoy 100% Profit</Typography>
-              </Box>
-            </Grid>
-            <Grid item>
-              <Box display="flex" alignItems="center">
-                <CheckCircleIcon sx={{ color: '#00e676', mr: 1 }} />
-                <Typography>Sell all over India</Typography>
-              </Box>
+
+            <Grid item xs={12} md={6}>
+              <Box
+                component="img"
+                src="https://media.istockphoto.com/id/1216198470/photo/portrait-of-female-owner-of-fashion-store-checking-stock-in-clothing-store-with-digital-tablet.jpg?s=612x612&w=0&k=20&c=gDSD1viD9C6x3ZPh13otDEoKaYZ00YhFfCCOQ2aqYG0="
+                alt="Supplier"
+                sx={{
+                  width: '100%',
+                  borderRadius: 2,
+                }}
+              />
             </Grid>
           </Grid>
-          <Button
-            variant="contained"
-            color="secondary"
-            sx={{ backgroundColor: '#ff4d4f', borderRadius: 3, mt: 2 }}
-          >
-            Sign up now
-          </Button>
-        </Grid>
+        </Box>
 
-        {/* Right side: Image content */}
-        <Grid item xs={12} md={6}>
-          <Box
-            component="img"
-            src="https://media.istockphoto.com/id/1216198470/photo/portrait-of-female-owner-of-fashion-store-checking-stock-in-clothing-store-with-digital-tablet.jpg?s=612x612&w=0&k=20&c=gDSD1viD9C6x3ZPh13otDEoKaYZ00YhFfCCOQ2aqYG0="
-            alt="Meesho Supplier"
-            sx={{
-              width: '100%',
-              borderRadius: 2,
-            }}
-          />
-        </Grid>
-      </Grid>
-    </Box>
-
+      </Container>
 
     </>
   )

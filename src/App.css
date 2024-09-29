@@ -3,10 +3,10 @@
     background-color: #fff !important;
     margin-top: 20px !important;
     width: 95%;
-    /* border-radius: 50px; */
+  
     color: #464444 !important;
 }
-/* HomePage.css */
+
 .slider-container {
     width: 100%;
     max-width: 1200px;
@@ -26,7 +26,7 @@
   
   .caption {
     position: absolute;
-    bottom: 20px; /* Adjust as needed */
+    bottom: 20px; 
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -35,7 +35,7 @@
   }
   
   .slick-dots {
-    bottom: 10px; /* Adjust dot position */
+    bottom: 10px; 
   }
   .carousel-overlay {
     position: absolute;
@@ -43,7 +43,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,7 +51,7 @@
   }
   
   .carousel-overlay:hover {
-    background: rgba(0, 0, 0, 0.7); /* Darker on hover */
+    background: rgba(0, 0, 0, 0.7); 
   }
   .product-card:hover img {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);

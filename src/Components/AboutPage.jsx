@@ -35,7 +35,6 @@ function AboutPage() {
           sx={{
             fontWeight: 'bold',
             fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' },
-            // color: '#333',
             fontFamily: "initial"
           }}
         >
@@ -56,7 +55,6 @@ function AboutPage() {
         </Typography>
       </Box>
       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '40px' }}>
-        {/* First Row - 3 Images */}
         <Box
           sx={{
             display: 'flex',
@@ -65,7 +63,7 @@ function AboutPage() {
             gap: 2,
             flexWrap: 'wrap',
             '& > div': {
-              position: 'relative', // For absolute positioning of overlay
+              position: 'relative', 
               width: '300px',
               height: '300px',
               backgroundColor: '#f0f0f0',
@@ -87,11 +85,10 @@ function AboutPage() {
                   width: '100%',
                   height: '100%',
                   objectFit: 'cover',
-                  transform: hoveredImage === image ? 'scale(1.1)' : 'scale(1)', // Zoom on hover
-                  transition: 'transform 0.3s ease', // Smooth zoom effect
+                  transform: hoveredImage === image ? 'scale(1.1)' : 'scale(1)', 
+                  transition: 'transform 0.3s ease', 
                 }}
               />
-              {/* Overlay for black shadow and text */}
               {hoveredImage === image && (
                 <Box
                   sx={{
@@ -100,7 +97,7 @@ function AboutPage() {
                     left: 0,
                     right: 0,
                     height: '80px',
-                    backgroundColor: 'rgba(0, 0, 0, 0.7)', // Black shadow
+                    backgroundColor: 'rgba(0, 0, 0, 0.7)',
                     color: 'white',
                     display: 'flex',
                     alignItems: 'center',
@@ -119,7 +116,6 @@ function AboutPage() {
           ))}
         </Box>
 
-        {/* Second Row - Centered Text */}
         <Box sx={{ textAlign: 'center', mb: 4 }}>
           <Typography variant="h4" sx={{
             fontWeight: 'bold', mb: 2, fontFamily: "initial"
@@ -133,7 +129,7 @@ function AboutPage() {
           </Typography>
         </Box>
 
-        {/* Third Row - 3 Images */}
+       
         <Box
           sx={{
             display: 'flex',
@@ -141,7 +137,7 @@ function AboutPage() {
             gap: 2,
             flexWrap: 'wrap',
             '& > div': {
-              position: 'relative', // For absolute positioning of overlay
+              position: 'relative', 
               width: '300px',
               height: '300px',
               backgroundColor: '#f0f0f0',
@@ -163,11 +159,10 @@ function AboutPage() {
                   width: '100%',
                   height: '100%',
                   objectFit: 'cover',
-                  transform: hoveredImage === image ? 'scale(1.1)' : 'scale(1)', // Zoom on hover
+                  transform: hoveredImage === image ? 'scale(1.1)' : 'scale(1)',
                   transition: 'transform 0.3s ease',
                 }}
               />
-              {/* Overlay for black shadow and text */}
               {hoveredImage === image && (
                 <Box
                   sx={{
@@ -176,7 +171,7 @@ function AboutPage() {
                     left: 0,
                     right: 0,
                     height: '80px',
-                    backgroundColor: 'rgba(0, 0, 0, 0.7)', // Black shadow
+                    backgroundColor: 'rgba(0, 0, 0, 0.7)', 
                     color: 'white',
                     display: 'flex',
                     alignItems: 'center',
@@ -195,17 +190,15 @@ function AboutPage() {
       </Box>
 
 
-      {/* About Us Section */}
       <Box
         sx={{
-          background: 'linear-gradient(135deg, #f0f4ff 0%, #fff5f7 100%)', // Gradient Background
+          background: 'linear-gradient(135deg, #f0f4ff 0%, #fff5f7 100%)',
           py: { xs: 8, sm: 10, md: 12 },
           px: { xs: 3, sm: 5, md: 7 },
           textAlign: 'center',
           borderRadius: '0 0 50px 50px',
         }}
       >
-        {/* Section Title */}
         <Typography
           variant="h4"
           sx={{
@@ -213,14 +206,14 @@ function AboutPage() {
             fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' },
             textAlign: 'center',
             mb: 5,
-            fontFamily: "'Playfair Display', serif", // Elegant Font
+            fontFamily: "'Playfair Display', serif",
             color: '#333',
           }}
         >
           Our Journey to Fashion Excellence
         </Typography>
 
-        {/* Section Description */}
+      
         <Typography
           variant="body1"
           sx={{
@@ -230,7 +223,7 @@ function AboutPage() {
             margin: '0 auto',
             mb: 6,
             color: "#555",
-            fontFamily: "'Roboto', sans-serif", // Classic, clean font
+            fontFamily: "'Roboto', sans-serif",
           }}
         >
           Fashion Hub began as a humble dream to revolutionize fashion. Today, we are a global brand offering the finest
@@ -238,7 +231,6 @@ function AboutPage() {
           where you find inspiration, individuality, and empowerment through fashion.
         </Typography>
 
-        {/* Highlights Section */}
         <Box
           sx={{
             display: 'flex',
@@ -248,7 +240,6 @@ function AboutPage() {
             mt: 4,
           }}
         >
-          {/* Highlight 1 - Sustainability */}
           <Box
             sx={{
               maxWidth: '300px',
@@ -281,7 +272,6 @@ function AboutPage() {
             </Typography>
           </Box>
 
-          {/* Highlight 2 - Creativity */}
           <Box
             sx={{
               maxWidth: '300px',
@@ -314,7 +304,6 @@ function AboutPage() {
             </Typography>
           </Box>
 
-          {/* Highlight 3 - Inclusivity */}
           <Box
             sx={{
               maxWidth: '300px',
@@ -348,13 +337,12 @@ function AboutPage() {
         </Box>
       </Box>
 
-      {/* Call to Action Section */}
       <Box
         sx={{
           backgroundColor: '#fdece4',
           mt: { md: 10, sm: 5 },
-          borderRadius: { xs: '0', md: '900px 0 0 900px' }, // No border radius on small screens
-          padding: { xs: '30px 0', md: '50px 0' }, // Smaller padding on mobile
+          borderRadius: { xs: '0', md: '900px 0 0 900px' }, 
+          padding: { xs: '30px 0', md: '50px 0' }, 
         }}
       >
         <Grid
@@ -363,19 +351,19 @@ function AboutPage() {
           alignItems="center"
           justifyContent="center"
         >
-          {/* Left Side - Text */}
+       
           <Grid
             item
             xs={12}
             md={6}
             sx={{
-              textAlign: { xs: 'center', md: 'left' }, // Center text on mobile, align left on larger screens
+              textAlign: { xs: 'center', md: 'left' }, 
             }}
           >
             <Box
               sx={{
-                padding: { xs: '10px', md: '20px' }, // Adjust padding for mobile
-                ml: { md: 4 }, // Apply margin-left on medium and larger screens
+                padding: { xs: '10px', md: '20px' }, 
+                ml: { md: 4 }, 
               }}
             >
               <Typography
@@ -383,7 +371,7 @@ function AboutPage() {
                 sx={{
                   fontWeight: 'bold',
                   mb: 3,
-                  fontSize: { xs: '2rem', md: '3rem' }, // Responsive font size
+                  fontSize: { xs: '2rem', md: '3rem' }, 
                 }}
               >
                 Join Our Fashion Community
@@ -393,7 +381,7 @@ function AboutPage() {
                 sx={{
                   mb: 4,
                   color: '#555',
-                  fontSize: { xs: '1rem', md: '1.25rem' }, // Responsive font size
+                  fontSize: { xs: '1rem', md: '1.25rem' }, 
                 }}
               >
                 At Fashion Hub, fashion is more than clothing. It’s a movement. Join us on our journey to create a world where style knows no boundaries.
@@ -403,9 +391,9 @@ function AboutPage() {
                 sx={{
                   backgroundColor: '#e91e63',
                   color: '#fff',
-                  padding: { xs: '8px 16px', md: '10px 20px' }, // Responsive button padding
+                  padding: { xs: '8px 16px', md: '10px 20px' }, 
                   borderRadius: '30px',
-                  fontSize: { xs: '0.875rem', md: '1rem' }, // Responsive button font size
+                  fontSize: { xs: '0.875rem', md: '1rem' },
                 }}
               >
                 SHOP NOW →
@@ -413,14 +401,14 @@ function AboutPage() {
             </Box>
           </Grid>
 
-          {/* Right Side - Image */}
+     
           <Grid
             item
             xs={12}
             md={6}
             sx={{
-              textAlign: 'center', // Center image on all screens
-              mt: { xs: 4, md: 0 }, // Add margin-top on mobile to separate image from text
+              textAlign: 'center', 
+              mt: { xs: 4, md: 0 }, 
             }}
           >
             <Box>
@@ -449,7 +437,7 @@ function AboutPage() {
           </Typography>
         </Box>
 
-      {/* two image contant */}
+      
       <Box
         sx={{
           backgroundColor: '#000',
@@ -468,11 +456,11 @@ function AboutPage() {
           sx={{
             margin: '0 auto',
             position: 'relative',
-            maxWidth: '1200px' // Ensures content doesn't stretch too wide
+            maxWidth: '1200px' 
           }}
         >
 
-          {/* Left Side Image */}
+        
           <Grid
             item
             xs={12}
@@ -484,7 +472,7 @@ function AboutPage() {
                 src="https://image.isu.pub/170214145958-9969485cb04ff2e7b4caefbbc394f00d/jpg/page_1.jpg"
                 alt="Fashion Community"
                 style={{
-                  width: '100%', // Ensures the image takes full width of its container
+                  width: '100%', 
                   height: 'auto',
                   borderRadius: '40px 0px 40px 0px',
                 }}
@@ -492,7 +480,6 @@ function AboutPage() {
             </Box>
           </Grid>
 
-          {/* Text Centered */}
           <Grid
             item
             xs={12}
@@ -520,7 +507,7 @@ function AboutPage() {
             </Box>
           </Grid>
 
-          {/* Right Side Image */}
+         
           <Grid
             item
             xs={12}
@@ -564,11 +551,11 @@ function AboutPage() {
           sx={{
             margin: '0 auto',
             position: 'relative',
-            maxWidth: '1200px' // Ensures content doesn't stretch too wide
+            maxWidth: '1200px' 
           }}
         >
 
-          {/* Left Side Image */}
+        
           <Grid
             item
             xs={12}
@@ -580,7 +567,7 @@ function AboutPage() {
                 src="https://fabfashionfix.com/wp-content/uploads/2013/09/Normal.jpg"
                 alt="Fashion Community"
                 style={{
-                  width: '100%', // Ensures the image takes full width of its container
+                  width: '100%', 
                   height: 'auto',
                   borderRadius: '40px 0 40px 0px',
                 }}
@@ -588,7 +575,6 @@ function AboutPage() {
             </Box>
           </Grid>
 
-          {/* Text Centered */}
           <Grid
             item
             xs={12}
@@ -615,7 +601,7 @@ function AboutPage() {
             </Box>
           </Grid>
 
-          {/* Right Side Image */}
+         
           <Grid
             item
             xs={12}
@@ -648,7 +634,7 @@ function AboutPage() {
             letterSpacing: "5px",
             mb: 3,
             mt: 4,
-            fontSize: { xs: "10px", sm: "15px", md: "23px" }, // Responsive font size
+            fontSize: { xs: "10px", sm: "15px", md: "23px" }, 
           }}
         >
           OUR SPECIALITIES
@@ -665,17 +651,17 @@ function AboutPage() {
         <Typography
           sx={{
             fontFamily: "inherit",
-            fontSize: { xs: "40px", sm: "60px", md: "80px" }, // Responsive font size
+            fontSize: { xs: "40px", sm: "60px", md: "80px" }, 
             fontWeight: "600",
             mt: 2,
             display: "flex",
-            flexWrap: "wrap", // Wrap text on small screens
+            flexWrap: "wrap", 
           }}
         >
           <Typography
             sx={{
               color: "red",
-              fontSize: { xs: "40px", sm: "60px", md: "80px" }, // Responsive font size
+              fontSize: { xs: "40px", sm: "60px", md: "80px" }, 
               fontWeight: "600",
               mr: 1,
             }}
@@ -684,7 +670,7 @@ function AboutPage() {
           </Typography>
           <Typography
             sx={{
-              fontSize: { xs: "40px", sm: "60px", md: "80px" }, // Responsive font size
+              fontSize: { xs: "40px", sm: "60px", md: "80px" },
               fontWeight: "600",
             }}
           >
@@ -694,7 +680,7 @@ function AboutPage() {
 
         <Typography
           sx={{
-            fontSize: { xs: "40px", sm: "60px", md: "80px" }, // Responsive font size
+            fontSize: { xs: "40px", sm: "60px", md: "80px" }, 
             fontWeight: "600",
           }}
         >
@@ -703,7 +689,6 @@ function AboutPage() {
       </Box>
       <Box sx={{ backgroundColor: '#f0f0f0', padding: '40px' }}>
   <Grid container spacing={2}>
-    {/* Portfolio Section */}
     <Grid item xs={12}>
       <Box
         sx={{
@@ -730,7 +715,6 @@ function AboutPage() {
       </Box>
     </Grid>
 
-    {/* Services Section */}
     <Grid item xs={12}>
       <Box
         sx={{
@@ -757,7 +741,7 @@ function AboutPage() {
       </Box>
     </Grid>
 
-    {/* About Company Section */}
+  
     <Grid item xs={12}>
       <Box
         sx={{

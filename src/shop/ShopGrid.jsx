@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // import carousel styles
-import { Box, Typography, IconButton, Button } from '@mui/material'; // Material-UI for styling
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Box, Typography, IconButton, Button } from '@mui/material'; 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { Card, CardMedia, CardContent, Grid, Paper } from '@mui/material';
@@ -94,8 +94,7 @@ function ShopGrid() {
                   alt={image.alt}
                   style={{
                     width: '100%',
-                    // height: 'auto',
-                    // display: 'block',
+                   
                   }}
                 />
               </Box>

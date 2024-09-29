@@ -3,79 +3,79 @@ import { Box, Typography, Grid } from '@mui/material';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Card, CardMedia, CardContent } from '@mui/material';
-import { Fade } from '@mui/material'; // For fade-in effect
+import { Fade } from '@mui/material'; 
 import  { useEffect, useState } from 'react';
 const latestCollectionItems = [
   {
-    img: 'https://m.media-amazon.com/images/I/51OEUSjxfZL._AC_UY1100_.jpg', // Add actual image path or URL
+    img: 'https://m.media-amazon.com/images/I/51OEUSjxfZL._AC_UY1100_.jpg', 
     brand: 'BRAND:GEEK',
     title: 'Viscose-Cashmere Scarf',
     price: '$450.00',
-    rating: 3.5, // Rating out of 5
+    rating: 3.5,
     sale: '13%',
     isNew: true
   },
   {
-    img: 'https://img.joomcdn.net/91b487db301181bee5097072e10ae01f853ad6c3_original.jpeg', // Add actual image path or URL
+    img: 'https://img.joomcdn.net/91b487db301181bee5097072e10ae01f853ad6c3_original.jpeg', 
     brand: 'BRAND:GEEK',
     title: 'Woolen Throw Blanket',
     price: '$320.00',
-    rating: 4, // Rating out of 5
+    rating: 4,
     sale: '20%',
     isNew: true
   },
   {
-    img: 'https://fashionnaari.com/cdn/shop/products/5_1_34a793ae-f921-43aa-a0d4-9f1d0d3f9467_650x.jpg?v=1604996638', // Add actual image path or URL
+    img: 'https://fashionnaari.com/cdn/shop/products/5_1_34a793ae-f921-43aa-a0d4-9f1d0d3f9467_650x.jpg?v=1604996638', 
     brand: 'BRAND:GEEK',
     title: 'Silk Evening Gown',
     price: '$1,200.00',
-    rating: 4.5, // Rating out of 5
+    rating: 4.5,
     sale: '5%',
     isNew: false
   }
   ,
   {
-    img: 'https://img.joomcdn.net/4a3a88bee8885a84067289047d4243cb0b1d58ea_original.jpeg', // Add actual image path or URL
+    img: 'https://img.joomcdn.net/4a3a88bee8885a84067289047d4243cb0b1d58ea_original.jpeg', 
     brand: 'BRAND:GEEK',
     title: 'Leather Handbag',
     price: '$950.00',
-    rating: 4.2, // Rating out of 5
+    rating: 4.2,
     sale: '10%',
     isNew: true
   },
   {
-    img: 'https://www.citycentredeira.com/-/media/blogs/2020/july/deira/5-summer-trends/gettyimages-1249681549.jpg', // Add actual image path or URL
+    img: 'https://www.citycentredeira.com/-/media/blogs/2020/july/deira/5-summer-trends/gettyimages-1249681549.jpg', 
     brand: 'BRAND:GEEK',
     title: 'Linen Summer Dress',
     price: '$300.00',
-    rating: 3.8, // Rating out of 5
+    rating: 3.8,
     sale: '15%',
     isNew: false
   },
   {
-    img: 'https://i.ytimg.com/vi/Uzoxnh9lykA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCCWIQWWwQJZMIRlP6vYIHPxkmR2g', // Add actual image path or URL
+    img: 'https://i.ytimg.com/vi/Uzoxnh9lykA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCCWIQWWwQJZMIRlP6vYIHPxkmR2g', 
     brand: 'BRAND:GEEK',
     title: 'Winter Wool Coat',
     price: '$700.00',
-    rating: 4.6, // Rating out of 5
+    rating: 4.6,
     sale: '25%',
     isNew: true
   },
   {
-    img: 'https://getketchadmin.getketch.com/product/8905980307120/660/HLSW000067_1.JPG', // Add actual image path or URL
+    img: 'https://getketchadmin.getketch.com/product/8905980307120/660/HLSW000067_1.JPG', 
     brand: 'BRAND:GEEK',
     title: 'Round Neack Swater',
     price: '$700.00',
-    rating: 4.6, // Rating out of 5
+    rating: 4.6,
     sale: '25%',
     isNew: true
   },
   {
-    img: 'https://zwin.io/react/stoon/assets/img/arrival/1.png', // Add actual image path or URL
+    img: 'https://zwin.io/react/stoon/assets/img/arrival/1.png', 
     brand: 'BRAND:GEEK',
     title: 'Faxon Canvas Low-Top Sneaker',
     price: '$450.00',
-    rating: 4.6, // Rating out of 5
+    rating: 4.6,
     sale: '25%',
     isNew: true
   }
@@ -132,7 +132,7 @@ function ShopList() {
   useEffect(() => {
     const interval = setInterval(() => {
       setHeaderIndex((prevIndex) => (prevIndex + 1) % headers.length);
-    }, 3000); // Change text every 3 seconds
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -273,7 +273,7 @@ function ShopList() {
                     boxShadow: '0 6px 15px rgba(0,0,0,0.2)',
                     transition: 'transform 0.3s ease',
                     '&:hover': {
-                      transform: 'scale(1.05)', // Slight zoom on hover
+                      transform: 'scale(1.05)', 
                     }
                   }}
                 >

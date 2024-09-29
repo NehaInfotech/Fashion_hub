@@ -93,7 +93,7 @@ const Search = styled('div')(({ theme }) => ({
   },
 }));
 
-// Custom Home Icon
+
 function HomeIcon(props) {
   return (
     <SvgIcon {...props}>
@@ -130,7 +130,7 @@ function Appbar() {
   const handleOpenHomeMenu = (event) => {
     if (isMobile) {
       setMobileHomeOpen((prev) => !prev);
-      setMobileShopOpen(false); // Close shop menu if opening home menu
+      setMobileShopOpen(false); 
     } else {
       setAnchorElHome(event.currentTarget);
     }
@@ -144,7 +144,7 @@ function Appbar() {
   const handleOpenShopMenu = (event) => {
     if (isMobile) {
       setMobileShopOpen((prev) => !prev);
-      setMobileHomeOpen(false); // Close home menu if opening shop menu
+      setMobileHomeOpen(false); 
     } else {
       setAnchorElShop(event.currentTarget);
     }

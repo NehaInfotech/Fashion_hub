@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Appbar from './Components/Appbar';
-import HomePage from './Components/HomePage'; // Unified home component
-import AboutPage from './Components/AboutPage'; // Unified about component
+import HomePage from './Components/HomePage';
+import AboutPage from './Components/AboutPage';
 import ShopGrid from './shop/ShopGrid';
 import ShopList from './shop/ShopList';
 import ShopFull from './shop/ShopFull';
@@ -16,8 +16,8 @@ function App() {
     <Router>
       <Appbar />
       <Routes>
-        <Route path="/" element={<HomePage />} /> {/* Unified HomePage */}
-        <Route path="/about" element={<AboutPage />} /> {/* Unified AboutPage */}
+        <Route path="/" element={<HomePage />} /> 
+        <Route path="/about" element={<AboutPage />} /> 
 
         <Route path="/shop/grid" element={<ShopGrid />} />
         <Route path="/shop/list" element={<ShopList />} />
